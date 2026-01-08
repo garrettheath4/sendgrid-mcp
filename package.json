@@ -1,6 +1,6 @@
 {
   "name": "@garrettheath4/sendgrid-mcp",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Send emails and interact with SendGrid",
   "publishConfig": {
     "access": "public"
