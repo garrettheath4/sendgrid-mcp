@@ -1,8 +1,10 @@
 {
-  "name": "sendgrid-mcp",
-  "version": "1.0.0",
+  "name": "@garrettheath4/sendgrid-mcp",
+  "version": "2.0.0",
   "description": "Send emails and interact with SendGrid",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "bin": {
     "sendgrid-mcp": "./build/index.js"
@@ -12,6 +14,7 @@
   ],
   "scripts": {
     "build": "tsc && chmod +x build/index.js",
+    "prepublishOnly": "npm run build",
     "prepare": "npm run build",
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector build/index.js",
